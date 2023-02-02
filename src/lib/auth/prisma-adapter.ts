@@ -9,7 +9,7 @@ export function PrismaAdapter(
 ): Adapter {
   return {
     async createUser(user) {
-      const { '@ignitecall:useriD': userIdOnCookies } = parseCookies({ req })
+      const { '@ignitecall:userId': userIdOnCookies } = parseCookies({ req })
 
       if (!userIdOnCookies) {
         throw new Error('User ID not found on cookies')
