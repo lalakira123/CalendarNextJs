@@ -16,6 +16,7 @@ export const CalendarHeader = styled('div', {
 export const CalendarTitle = styled('div', {
   fontWeight: '$medium',
   fontFamily: '$default',
+  textTransform: 'capitalize',
 
   span: {
     color: '$gray200',
